@@ -1,0 +1,7 @@
+---
+  - hosts: web
+    connection: ssh
+    become: True
+    become_user: root
+    roles:
+      - geerlingguy.nginx
